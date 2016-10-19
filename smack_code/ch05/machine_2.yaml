@@ -1,0 +1,10 @@
+cluster_name: 'BedxheCluster'
+num_tokens: 256
+seed_provider:
+    - class_name: org.apache.cassandra.locator.SimpleSeedProvider
+      parameters:
+          - seeds: "107.170.38.238"
+listen_address: 107.170.112.81
+rpc_address: 0.0.0.0
+broadcast_rpc_address: 1.2.3.4
+endpoint_snitch: RackInferringSnitch
